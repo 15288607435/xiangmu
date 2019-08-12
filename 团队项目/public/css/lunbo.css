@@ -1,0 +1,58 @@
+/* lunbo */
+#banner{
+    position: relative;
+    overflow: hidden;
+}
+#ul-imgs{
+    height: 600px;
+    overflow: hidden;
+}
+#ul-imgs li{
+    float: left;
+    overflow: hidden;
+    height: 600px;
+}
+#ul-imgs li img{
+    height: 600px;
+}
+#ul-idxs{
+    position: absolute;
+    width: 230px;
+    height: 20px;
+    bottom: 20px;
+	left: 42%;
+	margin: 0 auto;
+}
+#ul-idxs li{
+    float: left;
+    width: 40px;
+	height: 6px;
+    margin-right: 6px;
+    border: 1px solid #000;
+	/* background-color: #fff; */
+}
+.transition{
+    transition: all 0.7s linear;
+}
+.active{
+	border-radius: 5px;
+    background: #f07620;
+}
+#banner .btn-left{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: url("../img/page-index.d836e82.png")no-repeat -190px 0px;
+	top: 300px;
+    left: 0;
+}
+#banner .btn-right{
+    position: absolute;
+	top:300px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: url("../img/page-index.d836e82.png")no-repeat -75px -190px;
+    right:0;
+}

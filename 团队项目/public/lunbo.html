@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lunbo.css">
+    <title>Document</title>
+</head>
+<body>
+   <!-- 轮播图 -->
+    <div id="banner">
+        <ul id="ul-imgs" class="transition" style="width: 15000px">
+            <li><a href="javascript:;"></a><img src="img/fq4.jpg" alt=""></a></li>
+            <li><a href="javascript:;"></a><img src="img/fq2.jpg" alt=""></a></li>
+            <li><a href="javascript:;"></a><img src="img/fq3.jpg" alt=""></a></li>
+            <li><a href="javascript:;"></a><img src="img/lunbo2.jpg"  alt=""></a></li>
+            <li><a href="javascript:;"></a><img src="img/fq4.jpg" alt=""></a></li>
+        </ul>
+        <ul id="ul-idxs">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="btn-left"></div>
+        <div class="btn-right"></div>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+        var i=0;//现在显示的下标
+        var licount=4;//li的个数
+        var ulImgs=$("#ul-imgs");
+        var ulidxs=$("#ul-idxs");
+        // var li=$("#ul-imgs>li").width();
+        var li=$("body").width();
+        console.log(li);
+        $("#ul-imgs>li").css("width",li);
+        $("#ul-imgs>li>img").css("width",li);
+        function moveTo(to){ 
+             if(to==undefined){
+                 to=i+1;
+            }
+            if(i==0){
+                if(to>i){
+                    ulImgs.addClass("transition");
+                }else{
+                    ulImgs.removeClass("transition");
+                    ulidxs.children().eq(i+1).removeClass("active");
+                    ulImgs.css("margin-left",-li*licount);
+                     setTimeout(function(){
+                         moveTo(licount-1);
+                    },100) 
+                    return;
+                }        
+            }
+            i=to;//先将第几张图片i变为目标位置
+            ulidxs.children().eq(i).addClass("active");
+            ulImgs.css("margin-left",-i*li);
+            ulidxs.children().eq(i-1).removeClass("active");
+            if(i==licount){
+                ulidxs.children().eq(0).addClass("active");
+                i=0;
+                setTimeout(function(){
+                    ulImgs.removeClass("transition");
+                    ulImgs.css("margin-left",0);
+                },900)
+            }   
+            } 
+            // 点击按钮
+            var canclick=true;
+            var $left=$(".btn-left");
+            var $right=$(".btn-right");
+            $left.click(function(){
+                move(-1);
+            });
+            $right.click(function(){
+                move(1);
+            });
+            function move(n){
+                if(canclick){
+                    canclick=false;
+                if(n==-1){
+                    ulidxs.children().eq(i).removeClass("active");
+                }
+                      moveTo(i+n);
+                        setTimeout(function(){
+                            canclick=true;
+                        },900)   
+                    }
+                }
+            // 定时器
+            var timer=setInterval(function(){
+                moveTo();
+            },3000);
+            $("#banner").mouseenter(function(){
+                clearInterval(timer);
+            })
+            $("#banner").mouseleave(function(){
+                timer=setInterval(function(){
+                    moveTo()
+                },5000);
+            })
+            // 设置小圆点
+            var kaiguan=true;
+            $("#ul-idxs>li").click(function(){
+                if(kaiguan){
+                    $("#ul-idxs>li").removeClass("active");
+                        moveTo($(this).index());
+                        kaiguan=false;
+                    setTimeout(function(){
+                        kaiguan=true;
+                },900)
+            }   
+        })
+</script> 
+</body>
+</html>
