@@ -1,0 +1,206 @@
+#luo_750{
+    width: 750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+#luo_750 .Headline{
+    width: 750px;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: 1.2rem;
+    font-stretch: normal;
+    line-height: 1.08;
+    /* letter-spacing: normal; */
+    color: #2e2e2e;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+#luo_750 .Author div{
+    margin-bottom: 8px;
+}
+#luo_750 .Author div img{
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+#luo_750 .Author div span:nth-child(2){
+    height:26px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #2e2e2e;
+}
+#luo_750 .Author .luo_p span{
+    color: #767676;
+}
+#luo_750 .Author .luo_p span:nth-child(2){
+    width: 1px;
+height: 10px;
+background-color: #2e2e2e;
+display: inline-block;
+margin: 0 10px;
+}
+#luo_750 .luo_p2{
+    line-height: 35px;
+    font-size: 0.9rem;
+    text-indent: 45px;
+    color: rgb(25, 25, 25);
+}
+#luo_750 .luo_p3{
+    color: rgb(25, 25, 25);
+}
+#luo_750 img{
+    width: 750px;
+}
+#luo_750  h3{
+    height: 45px;
+    line-height: 45px;
+}
+#luo_750 .luo_p4{
+    width: 750px;
+    height: 50px;
+    text-align: center;
+}
+#luo_750 .s_detail_nrBq{
+    width: 750px;
+    height: 100px;
+    border-bottom: 2px solid #e6e6e6;
+}
+#luo_750 .s_detail_nrBq span {
+    height: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #333333;
+    background-color: #f2f2f2;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 0 12px;
+}
+.Disclaimer{
+    width: 750px;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height:15px;
+    color: #767676;
+}
+.Disclaimer span{
+    font-weight: 600;
+    color: #767676;
+}
+.A_fq ul{
+    margin: 50px 180px;
+}
+.A_fq ul li{
+    float: left;
+    width: 130px;
+    position: relative;
+}
+.A_fq ul li>i{
+    background-image: url("../img/image/weidenglv_img.svg");
+    background-position: -5px -5px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.A_fq ul li i.dz{
+    background-image: url("../img/image/group-5.png");
+    background-position: -5px -5px;
+}
+.A_fq ul li i.sc{
+    background-image: url("../img/image/group-5.png");
+    background-position: -5px -60px;
+}
+.A_fq ul li i.pl{
+    background-image: url("../img/image/group-5.png");
+    background-position: -5px -115px;
+}
+.A_fq ul li i.fx{
+    background-image: url("../img/image/group-5.png");
+    background-position: -5px -170px;
+}
+.A_fq ul li.active i.dz{
+    background-image: url("../img/image/group-5.png");
+    background-position: -5px -225px;
+}
+.A_fq ul li.active i.sc{
+    background-image: url("../img/image/group-5.png");
+    background-position: -5px -280px;
+}
+.A_fq ul li.active i.pl{
+    background-image: url("../img/image/group-5.png");
+    background-position: -5px -335px;
+}
+.A_fq ul li.active i.fx{
+    background-image: url("../img/image/group-5.png");
+    background-position: -5px -390px;
+}
+.A_fq ul li span.shangwz{
+    margin-top: 0px;
+    margin-bottom: 9px;
+}
+.A_fq ul li span{  
+    height: 14px;
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: center;
+    color: #767676;
+    width: 100%;
+    margin-top: 9px;
+    display: block;
+}
+
+.AR{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 378px;
+    margin-top: -189px;
+    margin-left: -495px;
+    z-index: 999;
+    background: #fff;
+}
+.AR ul{
+    overflow: inherit;
+    margin: 0;
+    width: 70px;
+    position: relative;
+}
+.AR ul li{
+    float: none;
+    width: 70px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.AR ul li:last-child{
+    margin-bottom: 0;
+}
+.fq_luo{
+    height: 300px;
+   
+}
+.fq_luo p{
+  height: 18px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 18px;
+   color: #767676;
+   margin-bottom: 20px
+}
+.fq_luo p span{
+    color: #000;
+}
+.fq_luo #fq_img{
+    width: 40px;
+    height: 40px;
+    margin: 19px 15px -17px 19px;
+}
+.fq_luo div{
+    height: 80px;
+    border: solid 1px #e6e6e6;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>久栖宿屿登录</title> 
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="js/login.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="title">
+        <h1>注册或登录久栖宿屿会员</h1>
+    </div>
+    <div class="inner">
+        <div class="registration">
+            <p class="reg_title">注册 久栖宿屿 会员</p>
+            <p class="reg_content">久栖宿屿&nbsp;,&nbsp;&nbsp;&nbsp;家的旅程，星的港湾&nbsp;,&nbsp;&nbsp;&nbsp;星标准，心服务，馨享受&nbsp;,&nbsp;&nbsp;&nbsp;相守一生<br>
+            成为 久栖宿屿 会员&nbsp;,&nbsp;&nbsp;&nbsp;探索心动文化</p><br>
+            <p id="reg_button" class="reg_button">注册</p>
+        </div>
+        <div class="line"></div>
+        <div class="login">
+            <p class="reg_title">久栖宿屿 会员登录</p>
+            <div class="information">
+                <div class="static_box">
+                    <input type="text" name="userName" id="static_phoneNum" class="common_input" value="" placeholder="用户名/手机号*">
+                    <input type="password" name="passWord" id="static_password" class="common_input" value="" placeholder="请输入密码*">
+                </div>
+            </div>
+            <div id="drag"></div>
+            <div class="code_login hide">
+                <input id="random" type="hidden">
+                <div class="yanzheng_box">
+                    <input class="yanzheng_input" type="text" name="smsContent" id="password" value="" placeholder="验证码*" oninput="if(value.length>5)value=value.slice(0,6)" autofocus="autofocus" onkeyup="value=this.value.replace(/\D+/g,'')">
+                    <input type="button" class="personal_pwd" id="yanzheng_btn" value="获取验证码">
+                </div>
+            </div>
+        </div>
+        <div class="login_style">
+            <p id="style">验证码登录</p>
+            <p class="forget">忘记密码</p>
+            <p class="toscan">第三方账号登录<span></span></p>
+        </div>
+        <div class="btn-dl">
+            <input class="login_button" id="static_login_btn" value="登录">
+            <input class="code_login_button" id="code_login_btn" value="登录">
+            <p class="psw_notice"></p>
+        </div>
+    </div>
+</div>
+<div class="sign_in" style="display: none">
+    <div id="content_sign">
+        <p class="sign_title">设置登录密码</p>
+        <p class="sign_ps">请您设置登录密码,以便您的使用</p>
+        <input placeholder="设置密码" class="password_set" type="password">
+        <input placeholder="确认密码" class="make_sure" type="password">
+        <div class="set_notice"></div>
+        <div class="button_box">
+            <input class="btn" type="button" value="提交">
+        </div>
+    </div>
+    <div class="set_notice"></div>
+</div>
+<footer id="footer"></footer>
+
+<script type="text/javascript">
+$('#drag').drag();
+</script>
+<script src="js/lianjie.js"></script>
+</body>
+</html>

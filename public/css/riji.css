@@ -1,0 +1,320 @@
+#fq_index .fq_riji{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+#fq_index .fq_riji .aa{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+   font-size: 15px;
+   font-weight: 600;
+   line-height: 50px;
+   color: #767676;
+}
+.TwoTitle{
+    width: 100%;
+    height: 100px;
+}
+.TwoTitle div{
+    float: left;
+    height: 100px;
+}
+.TwoTitle div:nth-child(1){
+    width: 85%;
+}
+.TwoTitle div:nth-child(1) p{
+    width: 100%;
+    font-size:1.8rem;
+    font-weight: 800;
+}
+.TwoTitle div:nth-child(2){
+    width: 15%;
+}
+.TwoTitle div:nth-child(2) a{
+    display: block;
+    margin-top:25px; 
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: #2e2e2e;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+.TwoTitle a span{
+  color: #2e2e2e;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.fq_index01{
+    clear: both;
+    overflow: hidden;
+}
+.fq_index01 .fq_flex{
+    width: 230px;
+    height: 260px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.fq_index01 .fq_flex:not(:first-child){
+    margin-left:23px; 
+}
+.fq_index01 .fq_flex img{
+    width: 230px;
+    height: 260px;
+    transform: scale(1)
+}
+.fq_index01 .fq_flex:hover img,
+.fq_index02 .fq_right ul li:hover img{
+    transition: all 0.7s linear;
+    transform: scale(1.09)
+}
+.fq_index01 .fq_flex h3{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height:24px;
+    font-size: 1.2rem;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+.fq_index01 .fq_flex p{
+    position: absolute;
+    bottom:5px;
+    left: 0;
+    width: 100%;
+    height:24px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-family: 宋体;
+}
+.fq_index02{
+    width: 1000px;
+    height: 470px;
+}
+.fq_index02 .fq_left{
+    float: left;
+    width: 280px;
+    height: 470px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.fq_index02 .fq_left img{
+    height:470px;
+    width: 280px;
+    transform: scale(1)
+}
+.fq_index02 .fq_left:hover img{
+    transition: all 0.7s linear;
+    transform: scale(1.09);
+}
+.fq_index02 .fq_left p{
+    position: absolute;
+    text-align: left;
+    text-indent: 10px;
+    width: 100%;
+    height: 30px;
+    color: #ffffff;
+    left: 0;
+}
+.fq_index02 .fq_left p:nth-child(2){
+    bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.fq_index02 .fq_left p:nth-child(3){
+    bottom: 10px;
+    font-family: 宋体;
+    font-size: 0.8rem;
+}
+.fq_index02 .fq_right{
+    float: left;
+    width:690px;
+    height: 470px; 
+    position: relative;
+}
+.fq_index02 .fq_right ul{
+    width: 700px;
+    height: 470px;
+}
+.fq_index02 .fq_right ul li{
+    float: left;
+    overflow: hidden;
+    margin-left:20px; 
+    width: 330px;
+    height: 220px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+.fq_index02 .fq_right ul .lili{
+    margin-top: 30px; 
+}
+.fq_index02 .fq_right ul li img{
+    width: 330px;
+    height: 220px;
+    transform: scale(1)
+}
+.fq_index02 .fq_right p{
+    position: absolute;
+    text-align: left;
+    text-indent: 10px;
+    width: 100%;
+    height: 30px;
+    color: #ffffff;
+    left: 0;
+}
+.fq_index02 .fq_right ul li p:nth-child(2){
+    bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.fq_index02 .fq_right ul li p:nth-child(3){
+    bottom: 10px;
+    font-family: 宋体;
+    font-size: 0.8rem;
+}
+.fq_index03{
+    width: 1000px;
+    height: 352px;
+}
+.fq_index03 ul{
+    display: flex;
+    justify-content: space-between;
+}
+.fq_index03 ul li{
+   width: 310px;
+   height: 352px;
+   overflow: hidden;
+} 
+.fq_index03 ul li img{
+    width: 310px;
+    height: 212px;
+    transform: scale(1);
+}
+.fq_index03 ul li:hover img{
+    transition: all 0.7s linear;
+    transform: scale(1.09);
+}
+.fq_introduce{
+    width: 310px;
+    height: 140px;
+    /* border: 1px solid #000; */
+}
+.fq_introduce h3,
+.fq_index04 .fq_four ul .fq_div h3{
+    font-size:0.9rem;
+    font-family: 宋体;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    text-align: center;
+}
+.fq_introduce p,
+.fq_index04 .fq_four ul .fq_div p{
+    display: block;
+    height: 50px;
+    margin: 0 12px 0 13px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #2e2e2e;
+    overflow: hidden;
+    margin-top: 18px;
+}
+.fq_introduce .p_img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.fq_introduce .hd{
+    color: #2e2e2e;
+    font-size: 0.8rem;
+    margin-left:5px;
+}
+.fq_introduce .sj{
+   margin-left: 68px;
+   font-size: 0.8rem;
+   color: #767676;
+}
+.fq_index04{
+    width: 100%;
+}
+.fq_index04 .fq_four{
+    width: 1000px;
+    height: 437px;
+}
+.fq_index04 .fq_four ul{
+    width: 1000px;
+    height: 218px;
+}
+.fq_index04 .fq_four ul li{
+    width: 480px;
+    height: 218px;
+    float: left;
+    box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    position: relative;
+}
+.fq_index04 .fq_four ul li:nth-child(2){
+    margin-left: 38px;
+}
+.fq_index04 .fq_four ul li:nth-child(1) .li_img,
+.fq_index04 .fq_four ul li:nth-child(2) .li_img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:-24px;
+    left: -19px;
+    border-radius: 50%;
+    margin-left: 38px;
+}
+.fq_index04 .fq_four ul .li_div{
+    position: absolute;
+    top: 47px;
+    left: 0;
+    width: 480px;
+    height: 170px;
+}
+.fq_index04 .fq_four ul .li_div div:nth-child(1){
+    float: left;
+    width: 120px;
+}
+.fq_index04 .fq_four ul .li_div div:nth-child(1) img{
+    width: 120px;
+    height: 100px;
+    margin-left: 20px;
+}
+.fq_index04 .fq_four ul .fq_div {
+    float: left;
+   width:312px;
+   height: 80px;
+   margin-left: 45px; 
+}
+.fq_index04 .fq_four ul .fq_div h3{
+    font-size: 0.8rem;
+    text-align: center
+}
+.fq_index04 .fq_four ul li .fq_div3{
+   width: 480px;
+   height: 50px;
+   margin-top: 117px;
+}
+.fq_index04 .fq_four ul li .fq_div3 span{
+    font-size: 0.8rem;
+    margin-left: 15px;
+}
+.fq_index04 .fq_four ul li .fq_div3 span:nth-child(1){
+    color: #2e2e2e;
+}
+.fq_index04 .fq_four ul li .fq_div3 span:nth-child(2){
+    color: #767676;
+}

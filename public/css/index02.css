@@ -1,0 +1,53 @@
+/* lunbo */
+#banner{
+    width: 300px;
+    height: 300px;
+    border:1px solid red; 
+    position: relative;
+    /* overflow: hidden; */
+}
+#ul-imgs{
+    width: 300px;
+    height: 300px;
+    /* overflow: hidden; */
+}
+#ul-imgs li{
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+#ul-imgs li img{
+    width: 300px;
+    height: 300px;
+}
+
+#ul-idxs{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 20px;
+    left: 50%;
+}
+#ul-idxs li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border:1px solid red; 
+    
+}
+.transition{
+    transition: all 0.7s linear;
+}
+.active{
+    border-radius: 5px;
+}
+#banner .btn-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#banner .btn-right{
+    position: absolute;
+    top: 0;
+    right:0;
+}
