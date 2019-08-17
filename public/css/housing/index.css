@@ -1,0 +1,341 @@
+div,ul,h1,h3{
+    margin: 0;
+    padding: 0;
+}
+body, button, input, select, textarea {
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #333
+}    
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear_both::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 轮播图 */
+.banner_box{
+    position: relative;
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 540px;
+}
+.h3{
+    font-size:24px;
+}
+.banner_ul>li.banner_item{
+    float: left;
+}
+.banner_item img{
+    width: 100%;
+}
+.banner_ul.transition{
+    transition: all .5s linear;
+}
+/* 箭头部分 */
+.banner_box .arrow_prev,.banner_box .arrow_next{
+    position: absolute;
+    top: 43%;
+    text-align: center;
+}
+.banner_box .arrow_prev{
+    left: 5px;
+}
+.banner_box .arrow_next{
+    right: 5px;
+}
+.arrow_next a,.arrow_prev a{
+    display: inline-block;
+    width: 45px;
+    height: 80px;
+    line-height: 75px;
+    background: rgba(0,0,0,.3);
+    font-size: 50px;
+    color:#eee;
+    border-radius: 3px;
+}
+/* 搜索框 */
+.search_box{
+    position: absolute;
+    bottom: 100px;
+    left: 16%;
+    width: 930px;
+
+}
+.booking_box .booking_item{
+    float: left;
+    width:375px;
+    height: 60px;
+    background: #fff;
+    line-height: 60px;
+    border-radius: 3px;
+}
+.booking_item+.booking_item{
+    margin-left:2px; 
+}
+.booking_item input{
+    outline: none;
+    border:0;
+    width: 320px;
+}
+/* 地图小图标、预订时间 */
+.place_icon_box,.time_icon{
+    width: 55px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+    font-size:30px; 
+}
+.icon-ditu{
+    font-size: 28px;
+    color: #333;
+}
+/* 搜索 */
+.booking_item:last-child{
+    width: 176px;
+    text-align: center;
+    background: #2fb3ff;
+}
+.btn_search{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.btn_search:hover{
+   color:red;
+}
+/* 主体部分 */
+section{
+    width: 1050px;
+    margin: 0 auto;
+}
+.ol_input{
+    line-height: 30px;
+    margin-top:10px;
+}
+/* 标题部分 */
+.title{
+    height: 60px;
+    line-height: 60px;
+    margin: 35px 0;
+
+}
+.title>h1{
+    width: 100%;
+    text-align: center;
+}
+/* 房型部分 */
+.h_left_part,.h_right_part{
+    width: 516px;
+}
+.h_left_part>div,.h_right_part>div{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.h_left_part>div img,.h_right_part>div img{
+    
+    transition: 1s;
+}
+.h_left_part>div img:hover,.h_right_part>div img:hover{
+    transform: scale(1.05);
+}
+.photo_box{
+    position: relative;
+}
+.photo_box.houses,.photo_box.inn,.photo_box.villa{
+    margin-bottom: 8px;
+}
+.photo_box.view,.photo_box.villa{
+    margin-left: 20px;
+}
+.house_type_box .photo_name{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 90px;
+    text-align: center;
+    background: #f8ebeb;
+    color: #2fb3ff;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 0 25px 0px 0px;
+}
+/* 特殊主题推荐 */
+.s_img_box{
+    height: 335px;
+    width: 252px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.s_img_box+.s_img_box{
+    margin-left: 14px;
+}
+.s_img_box img{
+    transition: 1s;
+}
+.s_img_box img:hover{
+    transform: scale(1.1);
+}
+.s_img_box>h1{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    color: #fff;
+    background: rgba(0,0,0,.1);
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+/* 服务承诺 */
+.security{
+    display: flex;
+    justify-content: space-between;
+}
+.security_item{
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    border:1px solid #fff;
+}
+.security_item span{
+    font-size: 85px;
+    color: #2fb3ff;
+}
+.security_item h3{
+    padding: 20px 0;
+    font-weight: 500;
+}
+.security_item:hover{
+    border:1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #bbb;
+}
+.security_item a{
+    color:#333;
+}
+.security_item a:hover{
+    color: #2fb3ff;
+}
+
+/*ms导航*/
+._1e22hjs {
+    white-space: nowrap !important;
+    overflow-x: hidden !important;
+    padding: 16px 8px !important;
+    margin: -16px -8px !important;
+}
+
+element.style {
+    transform: translateX(-0px);
+}
+._14h8plu {
+    -webkit-transition: -webkit-transform 0.5s,transform 0.5s !important;
+    -moz-transition: transform 0.5s !important;
+    transition: -ms-transform 0.5s,-webkit-transform 0.5s,transform 0.5s !important;
+}
+
+
+._823s9eb {
+    min-width: 120px !important;
+    height: 48px !important;
+    padding: 14px 16px !important;
+    border: solid 0.5px #D8D8D8 !important;
+    border-radius: 3px !important;
+    background: #ffffff !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15) !important;
+    font-size: 17px !important;
+    color: #484848 !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    line-height: 20px !important;
+    outline: none !important;
+    -webkit-transition: box-shadow 0.5s !important;
+    -moz-transition: box-shadow 0.5s !important;
+    transition: box-shadow 0.5s !important;
+}
+.btn-link, input, textarea, select, button, a {
+    font-weight: inherit;
+}
+input, textarea, select, button, a {
+    font-family: inherit;
+    font-size: 100%;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+._7urofu {
+    min-width: 120px !important;
+    height: 48px !important;
+    padding: 14px 16px !important;
+    border-radius: 3px !important;
+    background: #00848A !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    box-shadow: 0px 7px 14px rgba(0, 132, 138, 0.15) !important;
+    font-size: 17px !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    line-height: 20px !important;
+    outline: none !important;
+    border: solid 0.5px #00848A !important;
+}
+._1vauaad {
+    right: 16px !important;
+    position: absolute !important;
+    margin-top: -58px !important;
+    height: 68px !important;
+    width: 48px !important;
+    background: linear-gradient(270deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 17%, rgba(255, 255, 255, 0) 100%) !important;
+}
+._1oczzqqn {
+    position: absolute !important;
+    margin-top: -48px !important;
+    height: 48px !important;
+    padding-top: 10px !important;
+    right: 12px !important;
+}
+element.style {
+    width: 28px;
+    height: 28px;
+}
+._v1r3yxg {
+    display: inline-block !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    line-height: 1 !important;
+    position: relative !important;
+    touch-action: manipulation !important;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px 1px !important;
+    border-radius: 50% !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+    background: rgb(255, 255, 255) !important;
+}
+
+element.style {
+    transform: translateX(-0px);
+}
