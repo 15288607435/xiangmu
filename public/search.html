@@ -1,0 +1,173 @@
+<!DOCTYPE>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="renderer" content="webkit">
+ <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width">
+<title>久栖民宿</title>
+   	<link rel="stylesheet" href="css/search/search.css">
+	<link rel="stylesheet" href="css/search/lunbo.css">
+	<link rel="stylesheet" href="css/search/hDate.css">
+</head>
+<body>
+<!-- 轮播图 -->
+<div id="banner">
+	<ul id="ul-imgs" class="transition" style="width: 15000px">
+		<li><a href="javascript:;"></a><img src="img/fq4.jpg" alt=""></a></li>
+		<li><a href="javascript:;"></a><img src="img/fq2.jpg" alt=""></a></li>
+		<li><a href="javascript:;"></a><img src="img/fq3.jpg" alt=""></a></li>
+		<li><a href="javascript:;"></a><img src="img/lunbo2.jpg"  alt=""></a></li>
+		<li><a href="javascript:;"></a><img src="img/fq4.jpg" alt=""></a></li>
+	</ul>
+	<ul id="ul-idxs">
+		<li class="active"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<div class="btn-left"></div>
+	<div class="btn-right"></div>
+</div>
+<!-- 轮播结束 -->
+<div id="searchBar" class="search_bar clearfix">
+	<div class="search_bar_l">
+		<ul class="search_bar_l_ul">
+			<li class="city_li">
+				<div class="ipt_box">
+					<input id="cityIpt" class="city_ipt ipt" type="text" placeholder="请选择城市" readonly="readonly">
+					<!-- <input type="text" placeholder="选择城市" id="place" name=""> -->
+					<i class="icons icon_city"></i>
+				</div>
+				<ul id="cityList" class="select_list city_list">
+					<li data-citycode="110000">北京</li><li data-citycode="120000">天津</li><li data-citycode="130100">石家庄</li><li data-citycode="130300">秦皇岛</li><li data-citycode="210200">大连</li><li data-citycode="230100">哈尔滨</li><li data-citycode="310000">上海</li><li data-citycode="320100">南京</li><li data-citycode="320200">无锡</li><li data-citycode="320400">常州</li><li data-citycode="320500" class="current">苏州</li><li data-citycode="321000">扬州</li><li data-citycode="330100">杭州</li><li data-citycode="330200">宁波</li><li data-citycode="330300">温州</li><li data-citycode="330400">西塘/乌镇</li><li data-citycode="330500">莫干山</li><li data-citycode="330900">舟山</li><li data-citycode="331100">丽水</li><li data-citycode="341000">黄山</li><li data-citycode="350200">厦门</li><li data-citycode="361100">婺源</li><li data-citycode="370100">济南</li><li data-citycode="370200">青岛</li><li data-citycode="370600">烟台</li><li data-citycode="371000">威海</li><li data-citycode="410100">郑州市</li><li data-citycode="420100">武汉</li><li data-citycode="430100">长沙</li><li data-citycode="430800">张家界</li><li data-citycode="433100">凤凰古城/芙蓉镇</li><li data-citycode="440100">广州</li><li data-citycode="440300">深圳</li><li data-citycode="440400">珠海</li><li data-citycode="440600">佛山</li><li data-citycode="441300">惠州</li><li data-citycode="450300">桂林</li><li data-citycode="450500">北海</li><li data-citycode="460100">海口</li><li data-citycode="460200">三亚</li><li data-citycode="500000">重庆</li><li data-citycode="510100">成都</li><li data-citycode="511100">乐山</li><li data-citycode="513400">凉山彝族自治州</li><li data-citycode="520100">贵阳</li><li data-citycode="530100">昆明</li><li data-citycode="530500">腾冲</li><li data-citycode="530700">丽江</li><li data-citycode="532800">西双版纳</li><li data-citycode="532900">大理</li><li data-citycode="533400">香格里拉</li><li data-citycode="540100">拉萨</li><li data-citycode="542600">林芝地区</li><li data-citycode="610100">西安</li><li data-citycode="630100">西宁</li><li data-citycode="650100">乌鲁木齐</li><li data-citycode="TYO">东京</li><li data-citycode="UKY">京都</li><li data-citycode="OSA">大阪</li><li data-citycode="BKK">曼谷</li><li data-citycode="CNX">清迈</li><li data-citycode="PYX">芭提雅</li><li data-citycode="HKT">普吉</li><li data-citycode="SEL">首尔</li>
+				</ul>
+			</li>
+			<li class="start_date_li">
+				<input id="Text1" onClick="calendar.show({ id: this })" type="text" placeholder="入住日期" /> 
+				<i class="icons icon_date"></i>
+			</li>
+			<li class="end_date_li">
+				<input id="Text1" onClick="calendar.show({ id: this })" type="text" placeholder="离开日期" />
+				<i class="icons icon_date"></i>
+			</li>
+		</ul>
+	</div>
+	<div class="search_bar_r">
+		
+		<input id="search_btn" class="search_btn" type="button" value="开始探索">
+
+	</div>
+</div>
+	<!-- 吸顶条占位 -->
+	<div id="J_xiding_empty" style="height:70px;"></div>
+	<!--首页标志-->
+<!-- 城市 -->
+<script src="js/search/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/search/cityTemplate.js"></script>
+<!-- 日历 -->
+<script src="js/search/hDate.js"></script>
+<!-- 全局js -->
+ <script type="text/javascript" src="js/search/common.js"></script>
+<script type="text/javascript" src="js/search/getYear.js"></script>
+<!-- 日历 -->
+<script type="text/javascript">
+	$("#Text2").click(function (e) {
+		var ths = this;
+		calendar.show({
+			id: this, ok: function () {
+				alert(ths.value);
+			}
+		});
+	});
+</script>
+<!-- lunbo -->
+<script src="js/search/jquery-3.2.1.js"></script>
+<script>
+	var i=0;//现在显示的下标
+	var licount=4;//li的个数
+	var ulImgs=$("#ul-imgs");
+	var ulidxs=$("#ul-idxs");
+	// var li=$("#ul-imgs>li").width();
+	var li=$("body").width();
+	// console.log(li);
+	$("#ul-imgs>li").css("width",li);
+	$("#ul-imgs>li>img").css("width",li);
+	function moveTo(to){ 
+		 if(to==undefined){
+			 to=i+1;
+		}
+		if(i==0){
+			if(to>i){
+				ulImgs.addClass("transition");
+			}else{
+				ulImgs.removeClass("transition");
+				ulidxs.children().eq(i+1).removeClass("active");
+				ulImgs.css("margin-left",-li*licount);
+				 setTimeout(function(){
+					 moveTo(licount-1);
+				},100) 
+				return;
+			}        
+		}
+		i=to;//先将第几张图片i变为目标位置
+		ulidxs.children().eq(i).addClass("active");
+		ulImgs.css("margin-left",-i*li);
+		ulidxs.children().eq(i-1).removeClass("active");
+		if(i==licount){
+			ulidxs.children().eq(0).addClass("active");
+			i=0;
+			setTimeout(function(){
+				ulImgs.removeClass("transition");
+				ulImgs.css("margin-left",0);
+			},900)
+		}   
+		} 
+		// 点击按钮
+		var canclick=true;
+		var $left=$(".btn-left");
+		var $right=$(".btn-right");
+		$left.click(function(){
+			move(-1);
+		});
+		$right.click(function(){
+			move(1);
+		});
+		function move(n){
+			if(canclick){
+				canclick=false;
+			if(n==-1){
+				ulidxs.children().eq(i).removeClass("active");
+			}
+				  moveTo(i+n);
+					setTimeout(function(){
+						canclick=true;
+					},900)   
+				}
+			}
+		// 定时器
+		var timer=setInterval(function(){
+			moveTo();
+		},3000);
+		$("#banner").mouseenter(function(){
+			clearInterval(timer);
+		})
+		$("#banner").mouseleave(function(){
+			timer=setInterval(function(){
+				moveTo()
+			},5000);
+		})
+		// 设置小圆点
+		var kaiguan=true;
+		$("#ul-idxs>li").click(function(){
+			if(kaiguan){
+				$("#ul-idxs>li").removeClass("active");
+					moveTo($(this).index());
+					kaiguan=false;
+				setTimeout(function(){
+					kaiguan=true;
+			},900)
+		}   
+	})
+</script> 
+</body>
+</html>
