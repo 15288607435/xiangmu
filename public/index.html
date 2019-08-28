@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>久栖—酒店之外,就住久栖;</title>
+<link rel="stylesheet" href="css/iconfont.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/lunbo.css">
@@ -238,6 +239,8 @@
 <!-- 尾部 -->
 <div style="height: 100px;"></div> 
 <footer id="footer"></footer>
+<div id="GoUp">
+	<i class="iconfont icon-arrowup"></i>
 </div>
 <script src="js/search/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/search/cityTemplate.js"></script>
@@ -261,6 +264,19 @@
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
+<!--置顶-->
+<script>
+    //GoTop
+    $(window).scroll(function() {
+        $(window).scrollTop() > document.documentElement.clientHeight /2 ? $('#GoUp').fadeIn() : $('#GoUp').fadeOut();
+        $('.menu-fixed').hide();
+    });
+    $('#GoUp').click(function () {
+        $('html,body').stop().animate({
+            scrollTop: 0
+        }, 500);
+    });
+</script>
 <!-- 轮播js -->
 <script>
         var i=0;//现在显示的下标

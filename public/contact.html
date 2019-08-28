@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>联系我们</title>
+    <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/contact.css">
     <style>
         input, select {
@@ -100,12 +101,27 @@
         </div>
     </div>   
     <footer id="footer"></footer>
+    <div id="GoUp">
+            <i class="iconfont icon-arrowup"></i>
+    </div>
 <!--底部-->
 <script src="https://api.map.baidu.com/api?v=2.0&ak=RZZ2gObry82Y2BSzZ1xzMhfm&callback=mapinit"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/footer.js m        "></script>
+    <script src="js/footer.js"></script>
+    <script>
+		//GoTop
+		$(window).scroll(function() {
+			$(window).scrollTop() > document.documentElement.clientHeight /2 ? $('#GoUp').fadeIn() : $('#GoUp').fadeOut();
+			$('.menu-fixed').hide();
+		});
+		$('#GoUp').click(function () {
+			$('html,body').stop().animate({
+			    scrollTop: 0
+			}, 500);
+		});
+	</script>
 </body>
 </html>

@@ -1,0 +1,112 @@
+/* lunbo */
+#banner{
+    position: relative;
+    overflow: hidden;
+}
+#ul-imgs{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+#ul-imgs li{
+    float: left;
+    overflow: hidden;
+    height: 600px;
+}
+#ul-imgs li img{
+    height: 600px;
+}
+#ul-idxs{
+    position: absolute;
+    width: 230px;
+    height: 20px;
+    bottom: 20px;
+	left: 42%;
+	margin: 0 auto;
+}
+#ul-idxs li{
+    float: left;
+    width: 40px;
+	height: 6px;
+    margin-right: 6px;
+    border: 1px solid #000;
+	/* background-color: #fff; */
+}
+.transition{
+    transition: all 0.7s linear;
+}
+.active{
+	border-radius: 5px;
+    background: #f07620;
+}
+#banner .btn-left{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: url("../../img/page-index.d836e82.png")no-repeat -190px 0px;
+	top: 300px;
+    left: 0;
+}
+#banner .btn-right{
+    position: absolute;
+	top:300px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: url("../../img/page-index.d836e82.png")no-repeat -75px -190px;
+    right:0;
+}
+/* 搜索 */
+/* 搜索框 */
+.search_box{
+    position: absolute;
+    bottom: 300px;
+    left: 16%;
+    width: 933px;
+
+}
+.booking_box .booking_item{
+    float: left;
+    width:375px;
+    height: 60px;
+    background: #fff;
+    line-height: 60px;
+    border-radius: 3px;
+}
+.booking_item+.booking_item{
+    margin-left:2px; 
+}
+.booking_item input{
+    outline: none;
+    border:0;
+    width: 320px;
+}
+/* 地图小图标、预订时间 */
+.place_icon_box,.time_icon{
+    width: 55px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+    font-size:30px; 
+}
+.icon-ditu{
+    font-size: 28px;
+    color: #333;
+}
+/* 搜索 */
+.booking_item:last-child{
+    width: 176px;
+    text-align: center;
+    background: #2fb3ff;
+}
+.btn_search{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.btn_search:hover{
+   color:red;
+}

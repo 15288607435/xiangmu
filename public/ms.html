@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/ms/normalize_zh.css">
 	<link rel="stylesheet" href="css/ms/normalize_zh.css">
 	<link rel="stylesheet" href="css/ms/iconfont.css">
+	<link rel="stylesheet" href="css/iconfont.css">
 	<link rel="stylesheet" href="css/ms/index.css">
 	<link rel="stylesheet" href="css/ms/city_search.css">
 	<!-- 轮播 -->
@@ -28,11 +29,11 @@
 	<!-- 主体部分 -->
 	<section>
 		<!-- 导航栏 -->
-		<h2>夏季特惠房源</h2>
+		<!-- <h2>夏季特惠房源</h2>
 		<div class="search_nav">
 			<h4>低至 7 折，可叠加使用礼券</h4>
-		</div>
-		<div style="margin-top:8px;margin-bottom:24px">
+		</div> -->
+		<div style="margin-top:18px;margin-bottom:24px">
 			<div class="_1e22hjs">
 				<div class="_14h8plu" style="transform:translateX(-0px)">
 					<ul class="roes">
@@ -50,7 +51,7 @@
 				<div class="_1vauaad">
 
 				</div>
-				<div class="_1oczzqqn">
+				<!-- <div class="_1oczzqqn">
 					<button type="button" class="_v1r3yxg" aria-busy="false" style="width: 28px; height: 28px;">
 						<span class="_1c9ajsd1" style="font-size: 14px;">
 							<svg viewBox="0 0 18 18" role="img" aria-label="next" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;">
@@ -58,7 +59,7 @@
 							</svg>
 						</span>
 					</button>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
@@ -80,7 +81,7 @@
 						</a>
 					</div>
 					<div class="room_detail">
-						<a href="" title="『智能民宿』2号线袁家岗●天猫智能家居●阳光落地窗大床">【遇见•摩洛哥】设计师美宿!近西湖市中心 武林商圈地铁口 100寸投影 净化器全景落地窗五星酒店床品</a>
+						<a href="detail.html" title="『智能民宿』2号线袁家岗●天猫智能家居●阳光落地窗大床">【遇见•摩洛哥】设计师美宿!近西湖市中心 武林商圈地铁口 100寸投影 净化器全景落地窗五星酒店床品</a>
 					</div>
 					<div class="room_address">
 						<a href="">杭州市 · 整套酒店式公寓</a>
@@ -2293,7 +2294,7 @@
 				<!-- 第三结束 -->
 			</ul>
 		</div>
-		<h2>探索重庆的精彩之地</h2>
+		<h2>探索成都的精彩之地</h2>
 		<div style="margin-top: 8px; margin-bottom: 24px;">
 			<div class="_1e22hjs">
 				<div class="_14h8plu" style="transform: translateX(0px);">
@@ -2596,12 +2597,29 @@
 				</li>
 			</ul>
 		</div>
+		<div id="GoUp">
+			<i class="iconfont icon-arrowup"></i>
+		</div>
 	</section>
 	<!--轮播 -->
 	<script type="text/javascript" src="js/ms/jquery-1.11.0.min.js"></script>
    <script type="text/javascript" src="js/ms/imagesloaded.js"></script>
    <script type="text/javascript" src="js/ms/smartresize.js"></script>
 	<script type="text/javascript" src="src/jquery.skidder.js"></script>
+	<script src="js/footer.js"></script>
+	<!--置顶-->
+<script>
+		//GoTop
+		$(window).scroll(function() {
+			$(window).scrollTop() > document.documentElement.clientHeight /2 ? $('#GoUp').fadeIn() : $('#GoUp').fadeOut();
+			$('.menu-fixed').hide();
+		});
+		$('#GoUp').click(function () {
+			$('html,body').stop().animate({
+				scrollTop: 0
+			}, 500);
+		});
+	</script>
 	<script type="text/javascript">
 		$('.slideshow').each( function() {
 			  var $slideshow = $(this);

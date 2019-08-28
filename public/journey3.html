@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/journey_one.css">
+
+    <style type="text/css">
+        ul{list-style:none;height:40px}
+        .li{width:40px;height:40px}
+        .img26{width:30px;height:30px;text-align:center;margin-left:19px;cursor: pointer;}
+        .p{text-align: center;}
+        .likes{margin-left: 22px;}
+     </style>
 </head>
 <body>
+        <header id="header"></header>    
         <div id="luo_750">
             <h1 class="Headline">未来30天，国内最值得去的地方，安排吗？</h1>
             <div class="Author">
@@ -116,10 +126,9 @@
             </div>
             <div class="A_fq AR">
                     <ul>
-                        <li >
-                            <span class="shangwz"></span>
-                            <i class="dz"></i>
-                            <span>点赞</span>
+                        <li  class="li">
+                            <img  class="img26" src="img/image/yizan.png" />
+                            <p class="likes" class="p">&nbsp;</p>
                         </li>
                         <li >
                             <i class="sc"></i>
@@ -138,6 +147,7 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="page" id="Page" style="height: 64px;"></div>
                 </div>
                 <div style="height: 50px;"></div>
                  <div class="fq_luo">
@@ -149,9 +159,45 @@
                     
                 </div>
         </div>
-        <footer id="footer"></footer>
-        <script src="js/jquery-3.2.1.js"></script>
-        <script src="js/ajax.js"></script>
-        <script src="js/lianjie.js"></script>
+        <div id="GoUp">
+                <i class="iconfont icon-arrowup"></i>
+        </div>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/journey_one.2.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <script>
+		    //GoTop
+		    $(window).scroll(function() {
+			    $(window).scrollTop() > document.documentElement.clientHeight /2 ? $('#GoUp').fadeIn() : $('#GoUp').fadeOut();
+			    $('.menu-fixed').hide();
+		    });
+		    $('#GoUp').click(function () {
+			    $('html,body').stop().animate({
+			    	scrollTop: 0
+			    }, 500);
+		    });
+	    </script>
+        <script type="text/javascript">
+            $(function () {
+                for (var i = 0; i < $('.likes').length; i++) {
+                    var ran = Math.floor(Math.random() * 1000 + 1)
+                    $('.likes').eq(i).text(ran)	
+                }
+                $("img").click(function () {
+                    var num = $(this).next().text()
+                    num++;
+                    $(this).next().text(num);
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            P.initMathod({
+            params: {elemId: '#Page',total:'100',pageSize:'3'},
+            requestFunction: function () {
+                
+                console.log(JSON.stringify(P.config));
+            }
+            });
+            </script>
 </body>
 </html>

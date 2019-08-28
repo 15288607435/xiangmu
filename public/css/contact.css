@@ -1,0 +1,65 @@
+.container{
+    width: 100%;
+    background: #fff;
+}
+.container .luo_area{
+    width: 1000px;
+    margin: 0 auto;
+}
+.luo_area h1{
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 楷体;
+}
+.luo_area .div_p,
+.luo_area .div_li{
+    width: 750px;
+    margin: 0 auto;
+    height: 130px;
+}
+.luo_area .div_p p{
+    font-size: 15px;
+   color: #767676;
+    font-family: 微软雅黑;
+}
+.luo_area .div_p p:nth-child(1){
+    font-size: 15px;
+    color: #2a2106;
+    font-family: 微软雅黑;
+}
+.luo_area .div_li div{
+   width: 370px;
+   height: 200px;
+   float: left;
+   /* border: 1px solid red; */
+}
+.luo_area .div_li div:nth-child(1) p{
+    font-size: 13px;
+    color: #767676;
+    text-indent: 30px;
+    line-height: 30px;
+}
+.luo_area .div_li div:nth-child(2) input{
+   width: 350px;
+   height: 40px;
+   margin-left: 30px;
+   margin-bottom: 5px;
+}
+.luo_area .div_li div:nth-child(2) button{
+    width: 360px;
+    margin-left: 28px;
+    border-style: solid;
+    font-size: 14px;
+    font-family: 微软雅黑;
+   color: #767676;
+    height: 40px;
+    cursor: pointer;
+}
+#GoUp { display: none; position: fixed; right: 0; bottom: 10vh; z-index: 99; width: 50px; height: 50px; line-height: 50px; border-radius: 25px 0 0 25px; text-align: center; color: #fff; background: #bbbbbb; }
+#GoUp i { font-size: 20px;width: 20px;height: 20px; }
+
+.menu-fixed { display: none; position: fixed; z-index: 99; border-radius: 10px; }
+.menu-fixed li { width: 120px; height: 30px; line-height: 30px; margin-bottom: 5px; border: 1px solid #eee; border-radius: 15px; color: #fff; text-align: center; background: rgba(63, 66, 69, 0.8); }
+.menu-fixed li:hover { background: rgba(27, 172, 240, 0.8); }

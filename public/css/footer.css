@@ -48,11 +48,11 @@ a:hover{text-decoration: underline;}
     height: 35px;
 }
 .icon_wx{
-    background: url("../img/icon_head.png");
+    background: url("../img/index/icon_head.png");
     background-position: -90px -208px;
 }
 .icon_wb{
-    background: url("../img/icon_head.png");
+    background: url("../img/index/icon_head.png");
     background-position: -45px -208px;
 }
 .icon_wx:hover{
@@ -77,7 +77,7 @@ a:hover{text-decoration: underline;}
     color: #959ea7;white-space:nowrap;
 }
 .guide{
-    background: url("../img/icon_head.png");
+    background: url("../img/index/icon_head.png");
     background-position: 8px -258px;
     padding-top: 50px;
     display: inline-block;
@@ -154,7 +154,7 @@ a:hover{text-decoration: underline;}
     display:inline-block;
     width: 14px;
     height: 14px;
-    background-image: url("../img/xz_online_kf.png") !important;
+    background-image: url("../img/index/xz_online_kf.png") !important;
     background-repeat: no-repeat;
     background-position: 0 0;
     vertical-align: middle;

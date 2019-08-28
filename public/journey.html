@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>旅途速记</title>
+    <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/journey.css">
 </head>
@@ -235,10 +236,31 @@
                  </li>
             </ul>
         </div>
+        
   </div>  
+  <div style="height: 200px;"></div> 
+  <footer id="footer"></footer>
+  <div id="GoUp">
+        <i class="iconfont icon-arrowup"></i>
+    </div>
 </div>
+
 </div>
+
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script>
+		//GoTop
+		$(window).scroll(function() {
+			$(window).scrollTop() > document.documentElement.clientHeight /2 ? $('#GoUp').fadeIn() : $('#GoUp').fadeOut();
+			$('.menu-fixed').hide();
+		});
+		$('#GoUp').click(function () {
+			$('html,body').stop().animate({
+				scrollTop: 0
+			}, 500);
+		});
+	</script>
 </body>
 </html>
